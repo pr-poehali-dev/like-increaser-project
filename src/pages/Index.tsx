@@ -180,6 +180,54 @@ const Index = () => {
       </header>
 
       <main className="container mx-auto px-4 py-8">
+        <Card className="mb-12 overflow-hidden border-cska-blue/30 bg-gradient-to-r from-card to-muted/20 animate-fade-in">
+          <CardHeader className="pb-3">
+            <div className="flex items-center gap-2 mb-2">
+              <Icon name="Info" size={20} className="text-cska-blue" />
+              <CardTitle className="text-2xl">О портале ЦСКА News</CardTitle>
+            </div>
+          </CardHeader>
+          <CardContent className="text-muted-foreground space-y-4">
+            <p>
+              <strong className="text-foreground">pfccskanews.com</strong> — официальный новостной портал ПФК ЦСКА, созданный для болельщиков красно-синих. 
+              Мы предоставляем самую актуальную информацию о любимом клубе 24/7.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 pt-2">
+              <div className="flex gap-3">
+                <div className="w-10 h-10 rounded-lg bg-cska-red/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Newspaper" size={20} className="text-cska-red" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">Новости</p>
+                  <p className="text-sm">Горячие репортажи, эксклюзивные интервью, трансферы и события клуба</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="w-10 h-10 rounded-lg bg-cska-blue/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Trophy" size={20} className="text-cska-blue" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">Матчи</p>
+                  <p className="text-sm">Расписание игр, результаты, live-трансляции и детальные отчеты</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="w-10 h-10 rounded-lg bg-cska-red/20 flex items-center justify-center flex-shrink-0">
+                  <Icon name="Play" size={20} className="text-cska-red" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground">Видео</p>
+                  <p className="text-sm">Highlights, обзоры тренировок, интервью игроков и тренерского штаба</p>
+                </div>
+              </div>
+            </div>
+            <p className="text-sm pt-2 border-t border-border">
+              Присоединяйтесь к нашему сообществу болельщиков и будьте в курсе всех событий армейского клуба! 
+              🔴🔵 <span className="font-semibold text-cska-red">Вперёд, ЦСКА!</span>
+            </p>
+          </CardContent>
+        </Card>
+
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-8">
           <TabsList className="md:hidden w-full grid grid-cols-3">
             <TabsTrigger value="news" className="gap-2">
